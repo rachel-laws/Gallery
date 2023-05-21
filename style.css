@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.75rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  box-shadow: 0 0 15px rgb(0 0 0 / 0.12);
+}
+
+header img {
+  max-width: 100%;
+  margin-block: 2rem 2.5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.title span:last-of-type {
+  margin-left: 2.2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  width: 2rem;
+}
+
+.social-links a {
+  color: inherit;
+  padding: 0.5rem;
+  transition: 200ms ease;
+}
+
+.facebook:hover {
+  color: rgb(0, 93, 186);
+}
+
+.twitter:hover {
+  color: rgb(0, 136, 194);
+}
+
+.instagram:hover {
+  color: rgb(205, 0, 109);
+}
+
+.pinterest:hover {
+  color: rgb(194, 0, 0);
+}
+
+.contact-us {
+  padding: 0.3rem 0.75rem;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 50px;
+  transition: 200ms ease;
+}
+
+.contact-us:hover {
+  box-shadow: 3px 3px 0px 0px rgb(0 0 0 / 0.5);
+}
+
+.contact-us:active {
+  box-shadow: none;
+  transform: translateX(5px);
+}
+
+.grid {
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 2rem 4rem;
+  background: black;
+}
+
+.grid img {
+  background: black;
+  width: 100%;
+  max-width: 300px;
+  border: 8px solid white;
+  object-fit: cover;
+}
+
+footer {
+  height: 4rem;
+  background: white;
+  background-image: url('./assets/background.svg');
+  background-size: 500px;
+}
+
+@media all and (max-width: 800px) {
+  nav {
+    padding: 1rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social-links {
+    gap: 0;
+    margin-right: 5rem;
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  .grid {
+    padding: 2rem 0.25rem 4rem;
+  }
+
+  .contact-us {
+    margin-left: 0.5rem;
+  }
+}
